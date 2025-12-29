@@ -1,43 +1,43 @@
 Project - Study Tool
   
-name: Interactive Study Tool
-inspiration: NotebookLM
-description:
+Name: Interactive Study Tool
+Inspiration: NotebookLM
+Description:
   An AI-powered interactive study assistant that helps students understand
   academic content through context-aware question answering. The tool processes
   PDF chapters and YouTube lecture transcripts and provides teacher-style,
   exam-oriented explanations grounded strictly in the provided material.
 
-links:
+Links:
 github: [https://github.com/YOUR-USERNAME/interactive-study-tool](https://github.com/SayyamJain101)
 
-features:
+Features:
 - PDF ingestion and processing (Economics chapters)
 - YouTube lecture transcript ingestion
 - Context-aware interactive Q&A
 - Teacher-style explanations with simple language and examples
 - NotebookLM-inspired grounded responses (no external hallucinations)
 
-mvp_scope:
-included:
+MVP_Scope:
+Included:
   - PDF-based knowledge ingestion
   - YouTube transcript-based knowledge ingestion
   - Interactive student question answering
   - Teacher-style, exam-focused explanations
   - Responsive web interface
-excluded:
+Excluded:
   - Audio two-person dialogue (planned)
   - Video summaries (planned)
   - User authentication
   - Multi-user session management
 
-tech_stack:
+Tech_Stack:
 
-frontend:
+Frontend:
   framework: Next.js
   language: TypeScript
   styling: Tailwind CSS v4
-backend:
+Backend:
   runtime: Node.js
   framework: Express.js
 ai_and_processing:
