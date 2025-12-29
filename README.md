@@ -120,8 +120,11 @@ Requirements_met:
 
 Author:
 Name: Sayyam Jain
+
 Email: sayyamjain2022@gmail.com
+
 Github: [https://github.com/YOUR-USERNAME](https://github.com/SayyamJain101)
+
 Linkedin: [https://linkedin.com/in/YOUR-PROFILE](https://www.linkedin.com/in/sayyam-jain-b57871245/)
 
 license:
