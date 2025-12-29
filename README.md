@@ -57,6 +57,7 @@ prerequisites:
   - Node.js (v18+ recommended)
   - npm
   - OpenAI API key
+
 backend:
   steps:
     - cd backend
@@ -64,6 +65,7 @@ backend:
     - create .env file with OPENAI_API_KEY
     - node index.js
   runs_on: http://localhost:5000
+
 frontend:
   steps:
     - cd frontend
