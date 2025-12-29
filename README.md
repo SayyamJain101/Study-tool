@@ -12,24 +12,26 @@ Links:
 github: [https://github.com/YOUR-USERNAME/interactive-study-tool](https://github.com/SayyamJain101)
 
 Features:
-- PDF ingestion and processing (Economics chapters)
-- YouTube lecture transcript ingestion
-- Context-aware interactive Q&A
-- Teacher-style explanations with simple language and examples
-- NotebookLM-inspired grounded responses (no external hallucinations)
+  - PDF chapter ingestion and processing
+  - YouTube lecture transcript ingestion
+  - Context-aware interactive question answering
+  - Teacher-style explanations (simple, exam-oriented)
+  - Two-person teacher–student audio dialogue (Text-to-Speech)
+  - AI-generated video summary scripts with scene-wise breakdown
+  - Audio narration for video summaries
+  - NotebookLM-inspired grounded responses (no external hallucinations)
 
 MVP_Scope:
-Included:
-  - PDF-based knowledge ingestion
-  - YouTube transcript-based knowledge ingestion
-  - Interactive student question answering
-  - Teacher-style, exam-focused explanations
+Implemented:
+  - Text-based interactive Q&A
+  - Audio teacher–student dialogue
+  - Video summary generation (script + narration audio)
   - Responsive web interface
-Excluded:
-  - Audio two-person dialogue (planned)
-  - Video summaries (planned)
-  - User authentication
-  - Multi-user session management
+  - End-to-end working demo
+Notes: 
+  Full video rendering (MP4 generation) is not included.
+  The MVP focuses on content understanding, narration, and structure,
+  which aligns with early-stage NotebookLM-style tools.
 
 Tech_Stack:
 
@@ -37,28 +39,39 @@ Frontend:
   framework: Next.js
   language: TypeScript
   styling: Tailwind CSS v4
+
 Backend:
   runtime: Node.js
   framework: Express.js
-ai_and_processing:
+
+Ai_and_processing:
   - OpenAI API (LLM)
+  - OpenAI Text-to-Speech (TTS)
   - PDF parsing
   - YouTube transcript extraction
 
-architecture:
-flow:
-  - Frontend (Next.js UI)
-  - Backend API (Express.js)
-  - PDF & YouTube transcript processing
-  - Context-aware AI response generation
+Architecture:
 
-setup:
-prerequisites:
-  - Node.js (v18+ recommended)
+Overview: 
+  The frontend communicates with a backend API that processes
+  PDFs and YouTube transcripts. Relevant content is used as context
+  for AI-powered explanations, audio dialogue generation, and
+  video summary narration.
+
+Flow:
+  - Frontend UI (Next.js)
+  - Backend API (Express.js)
+  - Knowledge ingestion (PDF + YouTube)
+  - Context-aware AI processing
+  - Text, audio dialogue, and video summary outputs
+
+Setup:
+Prerequisites:
+  - Node.js (v18 or higher)
   - npm
   - OpenAI API key
 
-backend:
+Backend:
   steps:
     - cd backend
     - npm install
@@ -66,48 +79,50 @@ backend:
     - node index.js
   runs_on: http://localhost:5000
 
-frontend:
+Frontend:
   steps:
     - cd frontend
     - npm install
     - npm run dev
   runs_on: http://localhost:3000
 
-usage:
-steps:
+Usage:
+Steps:
   - Upload an economics chapter PDF
   - Add YouTube lecture links
-  - Ask questions related to the content
-  - Receive teacher-style, context-grounded explanations
+  - Ask text-based questions
+  - Generate teacher–student audio dialogue
+  - Generate video summary scripts with narration audio
 
-limitations:
-- Audio dialogue is not included in the MVP
-- Video summaries are not included in the MVP
-- Single knowledge base per session
-- Designed as a demo-scale application
+Limitations:
+- No automatic MP4 video rendering
+- No user authentication
+- Single-user demo environment
+- One knowledge base active at a time
 
-future_improvements:
-- Two-person teacher-student audio dialogue using TTS
-- AI-generated video summaries for concepts and exam tips
+Future_improvements:
+- Full video generation (images + audio → MP4)
 - Multi-chapter and multi-subject support
 - User authentication and saved study sessions
-- Quick revision and exam-focused summary mode
+- Dark mode and advanced UI personalization
+- Exam-focused quick revision mode
 
-assignment_alignment:
-objectives_met:
-  - NotebookLM-inspired interactive study experience
-  - Use of PDF and YouTube content as knowledge sources
-  - Interactive learning through AI-powered explanations
+Assignment_alignment:
+
+Requirements_met:
+  - Interactive study tool inspired by NotebookLM
+  - Use of PDF chapters and YouTube videos as inputs
+  - Interactive Q&A functionality
+  - Audio-based explanations
+  - Video-style summaries (script + narration)
   - Working MVP with deployable frontend and backend
-notes: 
-  Audio dialogue and video summaries are documented as future enhancements
-  beyond the MVP scope.
 
-author:
-name: Sayyam Jain
-email: sayyamjain2022@gmail.com
-github: [https://github.com/YOUR-USERNAME](https://github.com/SayyamJain101)
-linkedin: [https://linkedin.com/in/YOUR-PROFILE](https://www.linkedin.com/in/sayyam-jain-b57871245/)
+
+Author:
+Name: Sayyam Jain
+Email: sayyamjain2022@gmail.com
+Github: [https://github.com/YOUR-USERNAME](https://github.com/SayyamJain101)
+Linkedin: [https://linkedin.com/in/YOUR-PROFILE](https://www.linkedin.com/in/sayyam-jain-b57871245/)
 
 license:
 type: Educational / Evaluation Use
