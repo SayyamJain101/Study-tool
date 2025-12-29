@@ -1,4 +1,4 @@
-project:
+Project - Study Tool
   name: Interactive Study Tool
   inspiration: NotebookLM
   description: >
