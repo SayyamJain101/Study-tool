@@ -32,6 +32,7 @@ excluded:
   - Multi-user session management
 
 tech_stack:
+
 frontend:
   framework: Next.js
   language: TypeScript
